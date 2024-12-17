@@ -110,19 +110,29 @@ frontend/
 
 ### Running the Project
 
+**Open terminal and clone the repo**
+```
+git clone https://github.com/bassammmmm/chatbot-demo.git
+cd chatbot-demo
+```
+
+
 **For Docker engine v27.3.1 and later:**
 
 ```bash
-docker compose build
-docker compose up
+docker compose up --build
 ```
 
 **For older Docker versions:**
 ```bash
-docker-compose build
-docker-compose up
+docker-compose up --build
 ```
 
+**Notes**:
+```markdown
+- If you get permission denied, run the previous command again with sudo.
+- If failed to load a docker image, make sure you are logged in, by running docker login.
+```
 **After starting up:**
 ```markdown
 • Backend: Accessible at http://localhost:8000
