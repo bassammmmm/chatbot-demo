@@ -31,10 +31,11 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex-grow flex flex-col ms-5 p-4 mb-3 bg-chatbot-bg border-2 border-transparent rounded-[28px] min-h-0 bg-surfaceContainerLowest">
-        <ChatNav setIsSidebarOpened={setIsSidebarOpened} />
-        <Chat conversationId={selectedConversationId} />
-      </div>
+      {selectedConversationId &&
+        <div className="flex-grow flex flex-col ms-5 p-4 mb-3 bg-chatbot-bg border-2 border-transparent rounded-[28px] min-h-0 bg-surfaceContainerLowest">
+          <ChatNav setIsSidebarOpened={setIsSidebarOpened} />
+          <Chat conversationId={selectedConversationId} />
+        </div>}
     </main>
   );
 }

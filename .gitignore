@@ -36,15 +36,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Backend logs and migrations
-backend/*.log
-backend/logs/
-backend/**/migrations/
-
-# Docker
-backend/.dockerignore
-backend/*.pid
-
 # Static files
 backend/static/
 
