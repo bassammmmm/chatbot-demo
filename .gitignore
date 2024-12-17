@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# === Dependencies ===
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+frontend/!.yarn/patches
+frontend/!.yarn/plugins
+frontend/!.yarn/releases
+frontend/!.yarn/versions
+
+# === Testing ===
+frontend/coverage
+
+# === Next.js ===
+frontend/.next/
+frontend/out/
+
+# === Production ===
+frontend/build
+
+# === Backend ===
+# Python virtual environments
+.venv/
+venv/
+env/
+*/.venv/
+*/venv/
+*/env/
+virtualenv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Backend logs and migrations
+backend/*.log
+backend/logs/
+backend/**/migrations/
+
+# Docker
+backend/.dockerignore
+backend/*.pid
+
+# Static files
+backend/static/
+
+# === Misc ===
+*.DS_Store
+*.pem
+Thumbs.db
+ehthumbs.db
+.AppleDouble
+.LSOverride
+
+# === Debug ===
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+*.swp
+*.tmp
+*.bak
+
+# === Vercel ===
+frontend/.vercel
+frontend/.vercel/cache
+
+# === TypeScript ===
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# === Editors and IDEs ===
+.vscode/
+.idea/
